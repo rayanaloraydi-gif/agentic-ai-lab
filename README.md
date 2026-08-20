@@ -6,7 +6,11 @@
 **Track:** Track A (Multi-Agent Routing)
 
 This repository contains the final Capstone project for the [SDAIA Academy](https://github.com/SDAIAAcademy). 
-
+## How to Run
+1. Open the `.ipynb` notebook in Google Colab.
+2. Run the first cell to install all required dependencies (`langchain`, `langgraph`, etc.).
+3. Run the second cell. A secure prompt will appear asking for your `LANGCHAIN_API_KEY` and `GROQ_API_KEY`. Paste your real keys there (they will not be saved in the code).
+4. Run the remaining cells sequentially to initialize the RAG pipeline, the Multi-Agent Router, and execute the tests.
 ## 1. Workflow Pattern & Routing
 This system implements the **Routing Pattern**. A supervisor LLM uses `with_structured_output` to classify user queries and route them to one of three tasks: RAG search, Booking tool, or Escalation.
 
